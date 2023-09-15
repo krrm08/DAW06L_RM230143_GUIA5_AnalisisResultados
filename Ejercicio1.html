@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graficador</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h2>Seleccione los datos que desea graficar:</h2>
+
+    <form id="dataForm">
+        <fieldset>
+            <legend>Datos:</legend>
+            <input type="radio" id="navegadores" name="tipo" value="navegadores" checked>
+            <label for="navegadores">Navegadores</label>
+            <input type="radio" id="sistemas" name="tipo" value="sistemas">
+            <label for="sistemas">Sistemas Operativos</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Color del gráfico:</legend>
+            <input type="color" id="colorPicker" name="color" value="#ff0000">
+        </fieldset>
+
+        <fieldset>
+            <legend>Orientación:</legend>
+            <input type="radio" id="vertical" name="orientacion" value="vertical" checked>
+            <label for="vertical">Vertical</label>
+            <input type="radio" id="horizontal" name="orientacion" value="horizontal">
+            <label for="horizontal">Horizontal</label>
+        </fieldset>
+
+        <input type="button" value="Graficar" onclick="graficar()">
+    </form>
+
+    <div id="grafico"></div>
+
+    <script src="Script_Grafica.js"></script>
+</body>
+</html>

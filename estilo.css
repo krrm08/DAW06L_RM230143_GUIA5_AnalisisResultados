@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#grafico {
+    width: 500px;
+    height: 450px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: #eee;
+}
+
+.barra {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    background-color: rgb(0, 255, 242);
+    transition: 0.3s ease-out;
+    margin-right: 20px;
+}
+
+.barra.horizontal {
+    width: auto;
+    height: 50px;
+    bottom: auto;
+    right: 0;
+}
+
+.etiqueta {
+    text-align: center;
+    width: 70px;
+    position:sticky;
+    bottom: 20px;
+    font-size: 12px;
+    transition: 0.3s ease-out;
+    padding: 2px 5px;
+    margin-top: 5px;
+    white-space: nowrap;
+    margin-right: 20px;
+    
+}
+
+.etiqueta.horizontal {
+    bottom: auto;
+    right: 0;
+    width: auto;
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
